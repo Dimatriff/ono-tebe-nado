@@ -47,25 +47,21 @@ address {
   line-height: 24.3px;
 }
 
-.header__address {
+.block__address {
   justify-self: end;
 }
 
-.header__address-link {
+.address-link {
   text-underline-offset: 4px;
 }
 
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   z-index: 1;
   color: #0000;
-  background-color: #a7a7a7;
-  background-image: url("../images/cover.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #a7a7a7 url("../images/cover.jpg") no-repeat center / cover;   
 }
 
 .cover__title {
@@ -89,14 +85,9 @@ address {
   letter-spacing: normal;
 }
 
-.aligned-text,
-.aligned-text_center,
-.aligned-text_right {
-  display: block;
-}
-
 .aligned-text {
   text-align: left;
+  display: block;
 }
 
 .aligned-text_center {
@@ -129,7 +120,7 @@ address {
 .bet-button {
   border: 1px solid #fff;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
@@ -166,15 +157,7 @@ address {
   height: 100%;
   padding: 50px 40px;
   color: #fff;
-}
-
-.card_type_film,
-.card_type_book,
-.card_type_picture {
-  background-color: #a7a7a7;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #a7a7a7 no-repeat center / cover;  
 }
 
 .card_type_film {
@@ -261,11 +244,6 @@ address {
   object-fit: contain;
 }
 
-.about__column {
-  width: 693px;
-  height: 312px;
-}
-
 .about__title {
   margin-top: 98px;
   margin-bottom: 100px;
@@ -279,8 +257,8 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 1%;
-  word-spacing: 1px;
+  letter-spacing: 1%;  
+  margin-right: 35px;
 }
 
 .about__textt {
@@ -288,6 +266,7 @@ address {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 4%;
+  margin-right: 28px;  
 }
 
 .about__text:not(:last-of-type) {
@@ -298,7 +277,7 @@ address {
   display: grid;
   grid-template-columns: 400px 200px 400px;
   align-items: start;
-  padding: 377px 51px 88px;
+  padding: 128px 51px 88px;
 }
 
 .footer__address-link {
